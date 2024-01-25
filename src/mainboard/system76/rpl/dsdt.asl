@@ -19,9 +19,9 @@ DefinitionBlock(
 	{
 		#include <soc/intel/common/block/acpi/acpi/northbridge.asl>
 		#include <soc/intel/alderlake/acpi/southbridge.asl>
-		#if CONFIG(BOARD_SYSTEM76_ORYP11)
+		#if CONFIG(RPL_HAS_TCSS)
 			#include <soc/intel/alderlake/acpi/tcss.asl>
-		#endif // CONFIG(BOARD_SYSTEM76_ORYP11)
+		#endif // CONFIG(RPL_HAS_TCSS)
 	}
 
 	#include <southbridge/intel/common/acpi/sleepstates.asl>
